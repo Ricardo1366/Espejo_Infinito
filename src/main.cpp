@@ -27,6 +27,7 @@ void ledCorredor();
 
 void setup()
 {
+  // Iniciar puerto serie
   Serial.begin(115200);
   Serial.println("Reseteando");
   LEDS.addLeds<WS2812B, pinConexion, RGB>(leds, NumeroLeds);
